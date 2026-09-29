@@ -1,0 +1,14 @@
+[project]
+name = "llm-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "networkx>=3.7",
+    "ollama>=0.6.2",
+    "pypdf>=6.14.2",
+    "rich>=15.0.0",
+    "streamlit>=1.60.0",
+]

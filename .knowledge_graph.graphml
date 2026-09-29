@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="edge" attr.name="chunk_snippet" attr.type="string" />
+  <key id="d1" for="edge" attr.name="sources" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="calculate_total">
+      <data key="d0">entity</data>
+    </node>
+    <node id="process_data">
+      <data key="d0">entity</data>
+    </node>
+    <node id="MAX_RETRIES">
+      <data key="d0">entity</data>
+    </node>
+    <node id="snake_case">
+      <data key="d0">entity</data>
+    </node>
+    <node id="UserFactory">
+      <data key="d0">entity</data>
+    </node>
+    <node id="Python">
+      <data key="d0">entity</data>
+    </node>
+    <node id="python">
+      <data key="d0">entity</data>
+    </node>
+    <node id="DEFAULT_TIMEOUT">
+      <data key="d0">entity</data>
+    </node>
+    <node id="UPPER_SNAKE_CASE">
+      <data key="d0">entity</data>
+    </node>
+    <node id="get_user_by_id">
+      <data key="d0">entity</data>
+    </node>
+    <node id="DatabaseConnection">
+      <data key="d0">entity</data>
+    </node>
+    <node id="CamelCase">
+      <data key="d0">entity</data>
+    </node>
+    <node id="log_file">
+      <data key="d0">entity</data>
+    </node>
+    <node id="Database">
+      <data key="d0">entity</data>
+    </node>
+    <node id="noti_type">
+      <data key="d0">entity</data>
+    </node>
+    <node id="NotificationFactory">
+      <data key="d0">entity</data>
+    </node>
+    <node id="EmailNotification">
+      <data key="d0">entity</data>
+    </node>
+    <node id="ValueError">
+      <data key="d0">entity</data>
+    </node>
+    <node id="create_notification">
+      <data key="d0">entity</data>
+    </node>
+    <node id="InsufficientFundsError">
+      <data key="d0">entity</data>
+    </node>
+    <node id="PascalCase">
+      <data key="d0">entity</data>
+    </node>
+    <node id="UserProfile">
+      <data key="d0">entity</data>
+    </node>
+    <node id="CSS">
+      <data key="d0">entity</data>
+    </node>
+    <node id="PrimaryButton">
+      <data key="d0">entity</data>
+    </node>
+    <node id="Frontend">
+      <data key="d0">entity</data>
+    </node>
+    <node id="PageWrapper">
+      <data key="d0">entity</data>
+    </node>
+    <node id="TextInput">
+      <data key="d0">entity</data>
+    </node>
+    <edge source="calculate_total" target="process_data">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="MAX_RETRIES">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="snake_case">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="UserFactory">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="Python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="calculate_total" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="MAX_RETRIES">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="snake_case">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="UserFactory">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="Python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="process_data" target="log_file">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">items]
+```
+
+**✅ Good:**
+```python
+from typing import List
+
+def process_data(items: List[str]) -&gt; Lis...</data>
+    </edge>
+    <edge source="process_data" target="Database">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">items]
+```
+
+**✅ Good:**
+```python
+from typing import List
+
+def process_data(items: List[str]) -&gt; Lis...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="snake_case">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="UserFactory">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="Python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="MAX_RETRIES" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="UserFactory">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="Python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="snake_case" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="Python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UserFactory" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="python">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="Python" target="noti_type">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="Python" target="EmailNotification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="Python" target="ValueError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="Python" target="InsufficientFundsError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="python" target="DEFAULT_TIMEOUT">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="python" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="python" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="python" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="python" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="python" target="log_file">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">items]
+```
+
+**✅ Good:**
+```python
+from typing import List
+
+def process_data(items: List[str]) -&gt; Lis...</data>
+    </edge>
+    <edge source="python" target="Database">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">items]
+```
+
+**✅ Good:**
+```python
+from typing import List
+
+def process_data(items: List[str]) -&gt; Lis...</data>
+    </edge>
+    <edge source="python" target="noti_type">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="python" target="NotificationFactory">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="python" target="EmailNotification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="python" target="ValueError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="python" target="create_notification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="python" target="InsufficientFundsError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="DEFAULT_TIMEOUT" target="UPPER_SNAKE_CASE">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="DEFAULT_TIMEOUT" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="DEFAULT_TIMEOUT" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="DEFAULT_TIMEOUT" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UPPER_SNAKE_CASE" target="get_user_by_id">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UPPER_SNAKE_CASE" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="UPPER_SNAKE_CASE" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="get_user_by_id" target="DatabaseConnection">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="get_user_by_id" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="DatabaseConnection" target="CamelCase">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2"># เทคนิคการเขียน Python (Design Patterns &amp; Clean Code)
+
+คู่มือฉบับนี้รวบรวมหลักการเขียน Python ให้เป...</data>
+    </edge>
+    <edge source="log_file" target="Database">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">items]
+```
+
+**✅ Good:**
+```python
+from typing import List
+
+def process_data(items: List[str]) -&gt; Lis...</data>
+    </edge>
+    <edge source="noti_type" target="NotificationFactory">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="noti_type" target="EmailNotification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="noti_type" target="ValueError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="noti_type" target="create_notification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="noti_type" target="InsufficientFundsError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="NotificationFactory" target="EmailNotification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="NotificationFactory" target="ValueError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="NotificationFactory" target="create_notification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="EmailNotification" target="ValueError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="EmailNotification" target="create_notification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="EmailNotification" target="InsufficientFundsError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="ValueError" target="create_notification">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">attern: Factory Method
+เมื่อระบบมีการสร้าง Object หลายประเภทที่มีคุณสมบัติคล้ายกัน ให้ใช้ Factory Me...</data>
+    </edge>
+    <edge source="ValueError" target="InsufficientFundsError">
+      <data key="d1">python_clean_code.md</data>
+      <data key="d2">return EmailNotification()
+        elif noti_type.lower() == "sms":
+            return SMSNotificati...</data>
+    </edge>
+    <edge source="PascalCase" target="UserProfile">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="PascalCase" target="CSS">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="PascalCase" target="PrimaryButton">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="PascalCase" target="Frontend">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="UserProfile" target="CSS">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="UserProfile" target="PrimaryButton">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="UserProfile" target="Frontend">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="CSS" target="PrimaryButton">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="CSS" target="Frontend">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="CSS" target="TextInput">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2">"&gt;
+        {title &amp;&amp; &lt;h1 className="text-3xl font-bold text-gray-900 mb-6"&gt;{title}&lt;/h1&gt;}
+        &lt;di...</data>
+    </edge>
+    <edge source="PrimaryButton" target="Frontend">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2"># คู่มือและสไตล์การเขียน React + Tailwind CSS (Enterprise UI Guidelines)
+
+เอกสารนี้ระบุมาตรฐานการเขี...</data>
+    </edge>
+    <edge source="PrimaryButton" target="PageWrapper">
+      <data key="d1">react_tailwind_styleguide.md</data>
+      <data key="d2">on-300
+        ${disabled ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 active...</data>
+    </edge>
+  </graph>
+</graphml>

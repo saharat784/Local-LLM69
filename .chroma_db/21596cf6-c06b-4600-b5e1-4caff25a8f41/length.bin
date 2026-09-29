@@ -1,0 +1,1 @@
+invalid type: string "\">\n        {title && <h1 className=\"text-3xl font-bold text-gray-900 mb-6\">{title}</h1>}\n        <div className=\"text-gray-700\">\n          {children}\n        </div>\n      </div>\n    </div>\n  );\n};\n```\n\n## 5. การจ\u{e31}ดการ Form และ Input\nInput fields ท\u{e31}\u{e49}งหมดต\u{e49}องใช\u{e49}ร\u{e39}ปแบบเด�
