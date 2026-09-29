@@ -1,0 +1,20 @@
+timestamp	query	top_distance	relevant_chunks
+2026-09-29 15:51:36	How to name a class in python?	0.0323	5
+2026-09-29 15:51:37	What is the primary color for React?	0.0315	5
+2026-09-29 15:51:37	Give me a singleton pattern in python	0.0325	5
+2026-09-29 15:51:37	How to make a text input with Tailwind?	0.0325	5
+2026-09-29 15:51:37	Explain factory method	0.0315	5
+2026-09-29 16:21:01	How to name a class in python?	0.0323	5
+2026-09-29 16:21:01	What is the primary color for React?	0.0315	5
+2026-09-29 16:21:02	Give me a singleton pattern in python	0.0325	5
+2026-09-29 16:21:02	How to make a text input with Tailwind?	0.0325	5
+2026-09-29 16:21:02	Explain factory method	0.0315	5
+2026-09-29 16:22:10	How to name a class in python?	0.0323	5
+2026-09-29 16:22:11	What is the primary color for React?	0.0315	5
+2026-09-29 16:22:11	Give me a singleton pattern in python	0.0325	5
+2026-09-29 16:22:11	How to make a text input with Tailwind?	0.0325	5
+2026-09-29 16:22:11	Explain factory method	0.0315	5
+2026-09-29 16:29:50	hi	1.1650	4
+2026-09-29 17:16:21	ช่วยเขียน API ด้วย FastAPI สำหรับสร้าง User ใหม่ พร้อมบอกวิธีรันตาม Document หน่อย	0.0164	4
+2026-09-29 17:29:39	ช่วยเขียน API ด้วย FastAPI สำหรับสร้าง User ใหม่ พร้อมบอกวิธีรันตาม Document หน่อย	0.0164	4
+2026-09-29 17:53:22	ช่วยเขียน API ด้วย FastAPI สำหรับสร้าง User ใหม่ พร้อมบอกวิธีรันตาม Document หน่อย	0.0164	4

@@ -7,7 +7,7 @@ importlib.reload(rag_module)
 from rag_engine import RAGEngine
 
 st.set_page_config(
-    page_title="Local LLM",
+    page_title="Local LLM Studio",
     page_icon="🤖",
     layout="wide"
 )
@@ -23,27 +23,26 @@ st.markdown("""
         -webkit-text-fill-color: transparent;
         margin-bottom: 0.5rem;
     }
-    .rag-badge {
-        background-color: #E0F2FE;
-        color: #0369A1;
-        padding: 4px 10px;
-        border-radius: 6px;
-        font-size: 0.85rem;
-        font-weight: 600;
-    }
     .stChatMessage {
         border-radius: 12px;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# Initialize RAG Engine
+# Requirement 4 & 5: โหลด heavy objects ด้วย @st.cache_resource เสมอ 
+# เพื่อป้องกัน model reload ทุกครั้งที่ Streamlit rerun (เพราะ Streamlit รัน script ตั้งแต่ต้นทุกครั้ง)
 @st.cache_resource
-def get_rag_engine():
-    return RAGEngine()
+def load_rag():
+    try:
+        engine = RAGEngine()
+        # Requirement 7: handle error ใน load_rag()
+        if engine.hybrid_retriever is None:
+            return None # Database might be missing
+        return engine
+    except Exception as e:
+        return None
 
-# Ensure fresh RAGEngine instance if code changed
-rag_engine = RAGEngine()
+rag_engine = load_rag()
 
 # Helper to fetch installed models
 @st.cache_data(ttl=10)
@@ -67,8 +66,8 @@ def get_installed_models():
     except Exception as e:
         return {"llm": [], "embed": []}
 
-st.markdown('<div class="main-header">Local LLM Coding Assistant</div>', unsafe_allow_html=True)
-st.caption("Powered by Local Ollama Models & Hybrid RAG")
+st.markdown('<div class="main-header">Local LLM Studio</div>', unsafe_allow_html=True)
+st.caption("Powered by Local Ollama Models, LangChain & FAISS RAG")
 
 # Sidebar Configuration
 with st.sidebar:
@@ -93,16 +92,18 @@ with st.sidebar:
         selected_embedding = st.selectbox(
             "Select Embedding Model",
             options=available_embeds,
-            index=0 if not available_embeds else (available_embeds.index([m for m in available_embeds if "bge-m3" in m][0]) if any("bge-m3" in m for m in available_embeds) else 0)
+            index=0 if not available_embeds else (available_embeds.index([m for m in available_embeds if "nomic-embed-text" in m][0]) if any("nomic-embed-text" in m for m in available_embeds) else 0)
         )
         
+        # Requirement 1 & 2: ใช้ session_state เป็น "ความจำ" ของ Streamlit
         if 'current_embedding' not in st.session_state:
             st.session_state.current_embedding = selected_embedding
-            if selected_embedding:
+            if selected_embedding and rag_engine:
                 rag_engine.set_embedding_model(selected_embedding)
             
         if selected_embedding and selected_embedding != st.session_state.current_embedding:
-            rag_engine.set_embedding_model(selected_embedding)
+            if rag_engine:
+                rag_engine.set_embedding_model(selected_embedding)
             st.session_state.current_embedding = selected_embedding
             st.warning("You changed the Embedding Model. Please click 'Re-Index Database' below to apply changes.")
 
@@ -111,27 +112,38 @@ with st.sidebar:
     temperature = st.slider("Temperature", min_value=0.0, max_value=1.0, value=0.7, step=0.05)
     
     st.divider()
-    st.header("Knowledge Base")
+    st.header("Knowledge Base (FAISS)")
     enable_rag = st.toggle("Enable Knowledge Base Search", value=True)
     
-    rag_mode = st.radio(
-        "Retrieval Mode",
-        options=["Hybrid (Vector + Graph)", "Vector Only", "Graph Only"],
-        index=0,
-        disabled=not enable_rag
+    # Requirement 3: Metadata filtering UI
+    available_sources = rag_engine.get_available_sources() if rag_engine else []
+    selected_sources = st.multiselect(
+        "Filter by Source File (Leave empty for all)",
+        options=available_sources,
+        default=[],
+        disabled=not enable_rag or not rag_engine
     )
     
     top_k = st.slider("Max Context Chunks", min_value=1, max_value=8, value=4)
 
+    # นำปุ่ม Re-Index กลับมาตามคำขอผู้ใช้
     if st.button("Re-Index Database", use_container_width=True):
-        progress_bar = st.progress(0, text="Starting document indexing...")
+        progress_bar = st.progress(0, text="Starting indexing (FAISS/BM25/Kuzu)...")
         def on_progress(pct, done, total):
-            progress_bar.progress(pct, text=f"Indexing: {done}/{total} chunks ({int(pct * 100)}%)...")
+            progress_bar.progress(pct, text=f"Processing: {done}/{total} files ({int(pct * 100)}%)...")
 
-        stats = rag_engine.index_knowledge_base(force_reindex=True, progress_callback=on_progress)
+        if rag_engine is not None:
+            stats = rag_engine.index_knowledge_base(force_reindex=True, progress_callback=on_progress)
+        else:
+            temp_engine = RAGEngine()
+            stats = temp_engine.index_knowledge_base(force_reindex=True, progress_callback=on_progress)
+            st.cache_resource.clear()
+            
         progress_bar.empty()
-        st.success(f"Indexed {stats['files_indexed']} files ({stats['total_chunks']} chunks).")
-
+        st.success(f"Indexed {stats['files_indexed']} files ({stats['total_chunks']} chunks) successfully!")
+        time.sleep(1)
+        st.rerun()
+    
     st.divider()
 
     system_prompt = st.text_area(
@@ -144,7 +156,13 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-# Initialize Chat History
+# Requirement 7: แสดงข้อความที่ actionable อย่าให้ app crash โดยไม่บอกเหตุ
+if rag_engine is None:
+    st.error("🚨 ไม่พบฐานข้อมูล RAG (FAISS/BM25/Kuzu)!")
+    st.info("💡 ข้อแนะนำ (Actionable): กรุณากดปุ่ม **'Re-Index Database'** ในเมนูด้านซ้าย หรือรัน `uv run python setup.py` ใน Terminal เพื่อสร้างฐานข้อมูลก่อนเริ่มใช้งานครับ")
+    st.stop()
+
+# Requirement 1 & 2: ใช้ session_state จำประวัติแชท
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -160,7 +178,7 @@ for msg in st.session_state.messages:
             if "sources" in msg and msg["sources"]:
                 with st.expander("Referenced Sources"):
                     for src in msg["sources"]:
-                        st.markdown(f"**[{src.get('type', 'Vector')}] Source:** `{src['source']}` (Score: {src['score']})")
+                        st.markdown(f"**[{src.get('type', 'FAISS')}] Source:** `{src['source']}` (Distance: {src['score']})")
                         st.caption(src['content'])
 
 # Chat Input
@@ -179,19 +197,17 @@ if prompt := st.chat_input("Ask for code, concepts, or query your knowledge base
     effective_system_prompt = system_prompt
 
     if enable_rag:
-        mode_text = rag_mode.split(" ")[0]
-        with st.status(f"Searching Knowledge Base ({mode_text} Mode)...", expanded=False) as status:
-            retrieved_chunks = rag_engine.retrieve(prompt, top_k=top_k, mode=rag_mode)
+        with st.status("Searching FAISS Vectorstore...", expanded=False) as status:
+            # Pass source_filters
+            retrieved_chunks = rag_engine.retrieve(prompt, top_k=top_k, source_filters=selected_sources)
             if retrieved_chunks:
-                vector_count = sum(1 for c in retrieved_chunks if 'Vector' in c.get('type', ''))
-                graph_count = sum(1 for c in retrieved_chunks if 'Graph' in c.get('type', ''))
-                status.update(label=f"Found {len(retrieved_chunks)} relevant contexts ({vector_count} Vector, {graph_count} Graph)", state="complete")
+                status.update(label=f"Found {len(retrieved_chunks)} relevant contexts (L2 Distance Threshold applied)", state="complete")
             else:
-                status.update(label="No relevant context found.", state="complete")
+                status.update(label="No relevant context found (or all exceeded distance threshold).", state="complete")
 
         effective_system_prompt = rag_engine.build_rag_system_prompt(system_prompt, retrieved_chunks)
 
-    # Prepare payload for Ollama
+    # Requirement 9: ส่ง chat history ไปใน prompt ด้วย — ทำให้ LLM รู้ context ก่อนหน้า
     api_messages = [{"role": "system", "content": effective_system_prompt}] + st.session_state.messages
 
     # Stream Response
@@ -201,6 +217,8 @@ if prompt := st.chat_input("Ask for code, concepts, or query your knowledge base
 
         try:
             start_time = time.time()
+            
+            # Requirement 8: streaming ทำให้ user เห็น LLM พิมพ์ทีละตัวอักษร แทนที่จะรอนาน
             stream = ollama.chat(
                 model=selected_model,
                 messages=api_messages,
@@ -229,10 +247,11 @@ if prompt := st.chat_input("Ask for code, concepts, or query your knowledge base
             # Final timer display
             timer_placeholder.caption(f"Generated in {generation_time:.2f} seconds")
 
+            # Requirement 6: แสดง sources ให้ user เห็นว่า RAG retrieve มาจากไฟล์ไหน
             if retrieved_chunks:
                 with st.expander("Referenced Sources"):
                     for src in retrieved_chunks:
-                        st.markdown(f"**[{src.get('type', 'Vector')}] Source:** `{src['source']}` (Score: {src['score']})")
+                        st.markdown(f"**[{src.get('type', 'FAISS')}] Source:** `{src['source']}` (Distance: {src['score']})")
                         st.caption(src['content'])
 
             st.session_state.messages.append({
